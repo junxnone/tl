@@ -67,7 +67,11 @@
     {id: 6, content: item6, start: '2013-04-27'},
     {id: 7, content: item7, start: '2013-04-21'}
   ]);
-  var options = {};
+  var options = {
+      loadingScreenTemplate: function() {
+      return '<h1>Loading...</h1>'
+    }
+  };
   var timeline = new vis.Timeline(container, items, options);
 </script>
 </body>
