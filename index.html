@@ -27,8 +27,7 @@
   <script src="./assets/vis-timeline-graph2d.min.js"></script>
   <link href="./assets/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 
 </head>
 
@@ -61,6 +60,11 @@
         var container = document.getElementById('visualization');
 
         // Create a DataSet (allows two way data-binding)
+        data.map(item=>{
+          if(item['end'] == 'now'){
+            item.end = moment().format();
+          }
+        })
         items = new vis.DataSet(data);
         // Configuration for the Timeline
         var options = {
