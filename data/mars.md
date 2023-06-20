@@ -1,6 +1,7 @@
 title | starts | ends | groups | types | className | contents
 -- | -- |-- |-- |-- | -- | --
-海南文昌发射天问一号 | 2020-07-23 | now| 中国 |background| |
+天问一号 | 2020-07-23 | now| 中国 |background| |
+海南文昌发射天问一号 | 2020-07-23 | | 中国 |point| |
 第一次轨道修正 | 2020-08-02 | | 中国 |point | |
 第二次轨道修正 | 2020-09-20 | | 中国 |point  | |
 深空机动 | 2020-10-09 || 中国 |point  | |
