@@ -10,11 +10,13 @@
       font-family: arial, sans-serif;
       font-size: 11pt;
     }
+
     .vis-item.expected {
-            background-color: transparent;
-            border-style: dashed!important;
-            z-index: 0;
-        }
+      background-color: transparent;
+      border-style: dashed !important;
+      z-index: 0;
+    }
+
     span {
       color: red;
     }
@@ -58,12 +60,12 @@
 
         // DOM element where the Timeline will be attached
         var container = document.getElementById('visualization');
-
+        data = eval(data);
         // Create a DataSet (allows two way data-binding)
-        data.map(item=>{
-          if(item['end'] == 'now'){
+        data.map(item => {
+          if (item['end'] == 'now') {
             item.end = moment().format();
-          } 
+          }
           if (item.end != null) {
             item.end = moment(item.end).toDate();
           }
@@ -85,8 +87,8 @@
         });
         var grouplist = Array.from(groupset)
         var groupsdata = [];
-        grouplist.forEach(function(group, index){
-          groupsdata.push({"content":group, "id": group, "value": index, "visible": true});
+        grouplist.forEach(function (group, index) {
+          groupsdata.push({ "content": group, "id": group, "value": index, "visible": true });
         });
         console.log(groupsdata)
         var groups = new vis.DataSet(groupsdata);
