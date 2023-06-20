@@ -63,7 +63,11 @@
         data.map(item=>{
           if(item['end'] == 'now'){
             item.end = moment().format();
+          } 
+          if (item.end != null) {
+            item.end = moment(item.end).toDate();
           }
+          item.start = moment(item.start).toDate();
         })
         items = new vis.DataSet(data);
         // Configuration for the Timeline
