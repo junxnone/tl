@@ -73,7 +73,13 @@
             item.end = moment(item.end).toDate();
           }
           item.start = moment(item.start).toDate();
-          item.content = converter.makeHtml(item.content) + converter.makeHtml(item.title);
+          item.content = converter.makeHtml("**" + item.content + "**") + converter.makeHtml(item.title);
+          if(item.end != null) {
+            item.title = moment(item.start).format("YYYY-MM-DD") + " ~ " + moment(item.end).format("YYYY-MM-DD");
+          } else {
+            item.title = moment(item.start).format("YYYY-MM-DD");
+          }
+          
         })
         items = new vis.DataSet(data);
         // Configuration for the Timeline
@@ -81,7 +87,11 @@
           width: '100%',
           height: '900px',
           orientation: 'top',
-          showTooltips: false,
+          showTooltips: true,
+          tootip: {
+            followMouse: true,
+            overflowMethod: 'cap',
+          },
           margin: {
             item: 1
           }
