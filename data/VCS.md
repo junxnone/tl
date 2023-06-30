@@ -18,5 +18,5 @@ Git | 2005 | | DVCS | point | |
 Mercurial | 2005 | | DVCS |point  | |
 GNU Bazaar | 2005 | | DVCS | point | |
 Fossil | 2007 | | DVCS | point | |
-BitKeep | 1998  | | 商业软件 |point | | 收了回 Linux 社区的免费使用权，因此诞生了 Git
+BitKeep | 1998  | | 商业软件 |point | | 收回了 Linux 社区的免费使用权，因此诞生了 Git
 
