@@ -1,10 +1,12 @@
 title | starts | ends | groups | types | className | contents
 -- | -- |-- |-- |-- | -- | --
-SCCS | 1972 | | CVCS | | |
-RCS `Revision Control System` | 1982 | now | CVCS  | | |[RCS](https://en.wikipedia.org/wiki/Revision_Control_System)
+SCCS | 1972 | | Local Only | | |
+RCS `Revision Control System` | 1982 | now | Local Only | | |[RCS](https://en.wikipedia.org/wiki/Revision_Control_System)
+CVCS | 1990 | now | CVCS | background | |
 CVS | 1990 | | CVCS | | |
 CVSNT | 1998 | | CVCS | | |
 Subversion | 2000 | | CVCS | | |
+DVCS | 2001 | now | DVCS | background | |
 GNU arch | 2001 | | DVCS | | |
 Darcs | 2002  | | DVCS | | |
 DCVS | 2002 | | DVCS | | |
