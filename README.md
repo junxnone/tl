@@ -21,4 +21,4 @@ title | starts | ends | groups | types | className | contents
 - groups: 隶属的组别，会自动创建显示在左边栏
 - types: point/box(default)/range/background
 - className: 可以自定义 item 样式
-- contents: 事件详细描述
+- contents: 事件详细描述，支持 markdown 链接, contents 中的 markdown 内容会自动转为 `html content`
